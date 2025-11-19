@@ -8,12 +8,15 @@ author:
   name: "PM健康团队"
   email: "contact@pm-nutrition.com"
 
+# 添加主题设置
+theme: minima
+
 markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# 自定义颜色变量（在CSS中使用）
-primary_color: "#2E8B57"
-secondary_color: "#4682B4"
+# 排除不需要的文件
+exclude:
+  - .gitignore
