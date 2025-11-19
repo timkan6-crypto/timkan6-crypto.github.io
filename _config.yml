@@ -1,0 +1,19 @@
+title: "PM细胞营养"
+description: "德国PM细胞营养知识分享平台"
+baseurl: ""
+url: "https://timkan6-crypto.github.io"
+lang: "zh-CN"
+
+author:
+  name: "PM健康团队"
+  email: "contact@pm-nutrition.com"
+
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 自定义颜色变量（在CSS中使用）
+primary_color: "#2E8B57"
+secondary_color: "#4682B4"

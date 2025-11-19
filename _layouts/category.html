@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    {% seo %}
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="{{ '/' | relative_url }}">PM细胞营养</a>
+            </div>
+            <div class="nav-menu">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.category == 'all' %}active{% endif %}">首页</a>
+                <a href="/products/" class="nav-link {% if page.category == '产品介绍' %}active{% endif %}">德国PM产品介绍</a>
+                <a href="/nutrition/" class="nav-link {% if page.category == '营养知识' %}active{% endif %}">营养学知识</a>
+                <a href="/business/" class="nav-link {% if page.category == '事业机会' %}active{% endif %}">事业机会</a>
+                <a href="/contact/" class="nav-link">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PM细胞营养</h3>
+                    <p>科学健康知识分享平台</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <a href="/products/">产品介绍</a>
+                    <a href="/nutrition/">营养知识</a>
+                    <a href="/business/">事业机会</a>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>Email: contact@pm-nutrition.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PM细胞营养. 所有权利保留.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/css/style.css' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
