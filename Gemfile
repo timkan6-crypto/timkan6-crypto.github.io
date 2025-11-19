@@ -1,5 +1,3 @@
-source "https://gems.ruby-china.com/"
-gem "jekyll", "~> 4.3.0"
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "webrick"
+source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll"
