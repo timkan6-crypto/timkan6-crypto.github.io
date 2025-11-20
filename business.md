@@ -19,42 +19,6 @@ category: "事业机会"
     </div>
 </div>
 
-调试测试
-<!-- 在business.md的调试区域添加 -->
-<h4>所有文章详细列表:</h4>
-<ul>
-{% for post in site.posts %}
-    <li>
-        <strong>{{ post.date | date: "%Y-%m-%d" }}</strong> - 
-        "{{ post.title }}" - 
-        分类: [{{ post.categories | join: ", " }}] -
-        路径: {{ post.path }}
-    </li>
-{% endfor %}
-</ul>
-
-<!-- 详细调试信息 -->
-<div style="background: #e3f2fd; padding: 15px; margin: 20px 0; border-radius: 8px;">
-    <h3>🔍 详细调试信息</h3>
-    <p><strong>总文章:</strong> {{ site.posts | size }}</p>
-    <p><strong>business分类文章:</strong> {{ site.categories.business | size }}</p>
-    
-    <h4>所有分类:</h4>
-    <ul>
-    {% for category in site.categories %}
-        <li><strong>"{{ category[0] }}"</strong> - {{ category[1] | size }}篇文章</li>
-    {% endfor %}
-    </ul>
-    
-    <h4>business分类文章列表:</h4>
-    <ul>
-    {% for post in site.categories.business %}
-        <li>{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</li>
-    {% else %}
-        <li>没有找到business分类的文章</li>
-    {% endfor %}
-    </ul>
-</div>
 
 <div class="articles-section">
     <div class="container">
