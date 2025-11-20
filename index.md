@@ -29,7 +29,7 @@ category: "all"
                     <i class="fas fa-capsules"></i>
                     {% elsif post.categories contains '营养知识' %}
                     <i class="fas fa-apple-alt"></i>
-                    {% elsif post.categories contains 'business' %}
+                    {% elsif post.categories contains '事业机会' %}
                     <i class="fas fa-briefcase"></i>
                     {% else %}
                     <i class="fas fa-file-alt"></i>
